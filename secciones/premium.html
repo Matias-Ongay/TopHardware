@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +13,7 @@
     <header>
         <h1>TopHardware</h1>
         <h2>Premium</h2>
-        <h2>Si lo que buscas es asesoria premium y personalizada completa el formulario y te contactaremos</h2>
+        <h2>Si lo que buscas es asesoria premium y personalizada, completa el formulario y te contactaremos</h2>
         <nav class="menus">
             <ul>
                 <li>
@@ -51,11 +53,31 @@
                 <input type="reset" value="Resetear">
             </form>
         </article>
-        <img class="fotopremium" src="../images/formulario.svg" alt="imagen de una instalacion de nvme en placa madre">
+        <img class="fotopremium" data-aos="zoom-in-right" src="../images/formulario.svg" alt="imagen de una instalacion de nvme en placa madre">
     </section>
     </main>
     <footer>
-
+        <div class="icons">
+            <div>
+                <img src="../images/instagram.svg" alt="logo instagram">
+            </div>
+            <div>
+                <img src="../images/twitter.svg" alt="logo twitter">
+            </div>
+            <div>
+                <img src="../images/facebook.svg" alt="logo facebook">
+            </div>
+            <div>
+                <img src="../images/mail.svg" alt="logo de mail">
+            </div>
+            <div>
+                <p class="logo">Top</p>
+                <p class="logo">Hardware</p>
+            </div>
+        </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

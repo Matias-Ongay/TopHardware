@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +36,7 @@
     </header>
     <main>
         <section class="padregpu">
-            <img class="big" src="../images/gpu1.svg" alt="imagen placa de video rtx 2080">
+            <img class="big" data-aos="zoom-in-down" src="../images/gpu1.svg" alt="imagen placa de video rtx 2080">
             <section class="text">
                 <p class="mini">Gama de Entrada</p>
                 <p>
@@ -42,7 +44,7 @@
                     • se recomienda acompañarla de una fuente de por lo menos 550w
                 </p>
             </section>
-            <img class="big2" src="../images/gpu2.svg" alt="imagen puertos de la placa de video">
+            <img class="big2" data-aos="zoom-in-left" src="../images/gpu2.svg" alt="imagen puertos de la placa de video">
             <section class="text2">
                 <p class="mini">Gama Media</p>
                 <p> 
@@ -50,7 +52,7 @@
                     • Se recomienda acompañarla de una fuente de por lo menos 750w
                 </p>
             </section>
-            <img class="big3" src="../images/gpu3.svg" alt="imagen conector de energia de una placa de video rog">
+            <img class="big3" data-aos="zoom-in-right" src="../images/gpu3.svg" alt="imagen conector de energia de una placa de video rog">
             <section class="text3">
                 <p class="mini">Gama Alta</p>
                 <p>
@@ -81,6 +83,8 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

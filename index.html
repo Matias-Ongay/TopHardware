@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,14 +38,15 @@
     </header>
     <main>
         <div class="grilla">
-            <img class="big" src="./images/inicio1d.svg" alt="imagen de set up con dos monitores">
+            <img class="big" data-aos="fade-up"
+            data-aos-duration="2000" src="./images/inicio1d.svg" alt="imagen de set up con dos monitores">
             <h3 class="sub">Queres armar o renovar tu pc?</h3>
             <section class="cuerpo">
                 <section class="padre">
                     <p class="text">En TopHardware te brindamos la posibilidad de elegir las mejores combinaciones de
                         hardware dependiendo de tus necesidades.
                         Cada seccion cuenta con 3 niveles de hardware para adaptarse a todo tipo de usuarios.</p>
-                    <img class="big2" src="./images/inicio2.svg" alt="imagen de hardware variado ">
+                    <img class="big2" data-aos="zoom-in-left" src="./images/inicio2.svg" alt="imagen de hardware variado ">
                     <h3 class="sub2">Para que uso estan diseñados los diferentes niveles de hardware?</h3>
                     <section class="text2">
                         <p class="mini">Gama de Entrada: </p>
@@ -58,7 +61,7 @@
                             tarea de manera eficaz y con un buen rendimiento.
                         </p>
                     </section>
-                    <img class="big3" src="./images/inicio3.svg" alt="imagen de construccion de pc">
+                    <img class="big3"  data-aos="zoom-in-right" src="./images/inicio3.jpg" alt="imagen de construccion de pc">
                     <section class="text3">
                         <p class="mini">Gama Alta: </p>
                         <p>
@@ -94,6 +97,9 @@
         </div>
 
     </footer>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
