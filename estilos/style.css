@@ -326,6 +326,21 @@ li{
     a{
         font-size: 22px;
     }
+    a{
+        transition: all 1s;
+    }
+    a:hover{
+        color: rgb(219, 217, 217);
+        font-size:27px;
+    }
+    .text2{
+        transition: all 1s;
+    }
+    .text2:hover{
+        width: 110%;
+        height: 110%;
+    }
+    
 
 }
 @media(min-width:1100px){
