@@ -109,6 +109,7 @@ li{
     grid-area: sub2;
     padding: 10px 0px;
 }
+
 .big2{
     height: 100%;
     width: 100%;
@@ -384,11 +385,6 @@ li{
     a{
         font-size: 22px;
         transition: all 1s;
-    }
-    
-    a:hover{
-        color: rgb(219, 217, 217);
-        font-size:27px;
     }
     body{
         margin: 0% 10%;
