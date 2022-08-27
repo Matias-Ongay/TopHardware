@@ -7,25 +7,25 @@ body{
         
     }
 }
+.features{
+    font-size: 13px;
+    padding: 10px;
+    background-color:rgb(25,25,25);
+    width: 100%;
+}
 .text{
     font-family: 'Inter', sans-serif;
     grid-area: texto;
-    width: 100%;
     color:$text;
-    background-color:rgb(25,25,25);
     font-weight:bold;
-    font-size: 13px;
-    padding: 10px;
+    @extend .features;
 }
 .text2{
     font-family: 'Inter', sans-serif;
     grid-area: texto2;
-    width: 100%;
     color:$text;
-    background-color:rgb(25,25,25);
     font-weight:bold;
-    font-size: 13px;
-    padding: 10px;
+    @extend .features;
     p{
         padding: 10px 0px 10px 0px;
     }
@@ -34,36 +34,33 @@ body{
 .text3{
     font-family: 'Inter', sans-serif;
     grid-area: texto3;
-    width: 100%;
     color:$text;
-    background-color:rgb(25,25,25);
     font-weight:bold;
-    font-size: 13px;
-    padding: 10px;
+    @extend .features;
     p{
         padding: 10px 0px 10px 0px;
     }
 }
-.big{
+.full{
     width: 100%;
     height: 100%;
+}
+.big{
+    @extend .full;
     grid-area:big;
     border: solid rgb(0, 0, 0);
     
 }
 .big2{
-    height: 100%;
-    width: 100%;
+    @extend .full;
     grid-area: big2;
 }
 .big3{
-    height: 100%;
-    width: 100%;
+    @extend .full;
     grid-area: big3;
 }
 .fotopremium{
-    height: 100%;
-    width: 100%;
+    @extend .full;
     grid-area: big4;
     background-color: rgb(25,25,25);
     padding: 20px;

@@ -1,4 +1,8 @@
-
+@mixin font($family,$weight) {
+    font-family: $family;
+    font-weight: $weight;
+    
+}
 header{
    
     padding: 20px 20px 0px 20px;
@@ -6,8 +10,8 @@ header{
     background-color:rgb(0, 0, 0);
     color:$title;
     flex-direction: column;
-    font-family: 'Inter', sans-serif;
-    font-weight: bolder;
+    @include font('Inter', sans-serif,bolder );
+    
     nav{
         width: 100%;
         align-items: center;
@@ -20,15 +24,13 @@ h1{
     
     font-size: 22px;
     text-align:left;
-    font-family: 'Inter', sans-serif;
-    font-weight: bolder;
+    @include font('Inter', sans-serif,bolder );
     color:$title;
     
 
 }
 h2{
-    font-family: 'Inter', sans-serif;
-    font-weight: bolder;
+    @include font('Inter', sans-serif,bolder );
     padding: 10px 0px;
     color:$text;
     font-size: 15px;
