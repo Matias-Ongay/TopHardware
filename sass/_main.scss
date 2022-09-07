@@ -1,5 +1,10 @@
+html{
+    overflow-x: hidden;
+}
 body{
     background-color: black;
+    max-width: 100%;
+    overflow-x: hidden;
     main{
         padding: 10px 20px 0px 20px;
         font-family: 'Inter', sans-serif;
@@ -15,6 +20,7 @@ body{
 }
 .text{
     font-family: 'Inter', sans-serif;
+    margin: 0px;
     grid-area: texto;
     color:$text;
     font-weight:bold;
@@ -23,23 +29,29 @@ body{
 .text2{
     font-family: 'Inter', sans-serif;
     grid-area: texto2;
+    margin: 0px;
     color:$text;
     font-weight:bold;
     @extend .features;
-    p{
-        padding: 10px 0px 10px 0px;
-    }
+   
 
 }
 .text3{
     font-family: 'Inter', sans-serif;
     grid-area: texto3;
+    margin: 0px;
     color:$text;
     font-weight:bold;
     @extend .features;
-    p{
-        padding: 10px 0px 10px 0px;
-    }
+   
+}
+.mini{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+p{
+    padding: 0px;
+    margin: 0px;
 }
 .full{
     width: 100%;
@@ -69,6 +81,7 @@ body{
     grid-area: cuerpo;
 }
 .grilla{
+    max-width: 100%;
     display: grid;
     grid-template-areas:
     "big"
@@ -182,12 +195,7 @@ h3{
         ;
 
     }
-    h1{
-        font-size: 25px;
-    }
-    h2{
-        font-size: 18px;
-    }
+  
     h3{
         font-size: 18px;
     }
@@ -225,12 +233,7 @@ h3{
         "big3 texto3 texto3";
         
     }
-    h1{
-        font-size: 32px;
-    }
-    h2{
-        font-size: 23px;
-    }
+ 
     h3{
         font-size: 23px;
     }
@@ -271,14 +274,10 @@ h3{
         "texto3 texto3";
     }
     
+    
 }
 @media(min-width:1024px){
-    h1{
-        font-size: 34px;
-    }
-    h2{
-        font-size: 25px;
-    }
+ 
     h3{
         font-size: 25px;
     }
